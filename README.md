@@ -1,2 +1,2 @@
-# kbhsec-website
+# kbhSEC-website
 KbhSEC website
