@@ -7,6 +7,9 @@ export default defineNuxtConfig({
 
     MJ_APIKEY_PRIVATE: process.env.MJ_APIKEY_PRIVATE
   },
+  experimental: {
+    componentIslands: true,
+  },
   app: {
     head: {
       title: 'KbhSec Website', // default fallback title
@@ -31,6 +34,13 @@ export default defineNuxtConfig({
   },
   prisma: {
     autoSetupPrisma: true,
+  },
+  build: {
+    transpile: ['@prisma/client']
+  },
+  alias: {
+    '.prisma/client/index-browser': '@prisma/client',
+    '.prisma/client/default': '@prisma/client',
   },
   modules: [
     '@nuxt/eslint',
