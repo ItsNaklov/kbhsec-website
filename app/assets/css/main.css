@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-primary: black;
+}
+
+.dark {
+  --ui-primary: white;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html, body, #__nuxt {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  min-height: 100%;
+}
